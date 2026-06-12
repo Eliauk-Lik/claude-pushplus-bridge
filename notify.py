@@ -15,7 +15,7 @@ import urllib.request
 TOKEN_FILE = os.path.expanduser("~/.claude/pushplus_token")
 PUSHPLUS_URL = "http://www.pushplus.plus/send"
 COOLDOWN_FILE = "/tmp/claude-push-cooldown"
-MIN_INTERVAL = 30  # 两次推送最小间隔（秒）
+MIN_INTERVAL = 10  # 两次推送最小间隔（秒）
 
 
 def get_token() -> str:
