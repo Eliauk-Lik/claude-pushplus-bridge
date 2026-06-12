@@ -1,0 +1,26 @@
+{
+  "_comment": "将此段合并到 ~/.claude/settings.json 的 hooks 字段中",
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /home/Eliauk/.claude/scripts/pushplus-notify.py PermissionRequest"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /home/Eliauk/.claude/scripts/pushplus-notify.py Stop"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+# 敏感文件
+pushplus_token
+*.token
+.env
+.secret
+
+# Python
+__pycache__/
+*.pyc
+.venv/
