@@ -78,7 +78,8 @@ echo '{"hook_type":"test"}' | python3 ~/.claude/scripts/pushplus-notify.py test
 | 事件 | 时机 | 推送内容 |
 |------|------|---------|
 | `PermissionRequest` | Claude 弹出权限确认框 | 🔔 需要你的操作 + 工具名 |
-| `Stop` | Claude 完成任务 | ✅ 任务完成 |
+
+内置 30 秒防抖：短时间内多次审批只会推送一次，避免触发 PushPlus 限流。
 
 ## 手机侧检查清单
 
