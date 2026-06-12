@@ -39,7 +39,7 @@ cp notify.py ~/.claude/scripts/pushplus-notify.py
 
 ### 4. 配置 Claude Code Hooks
 
-在 `~/.claude/settings.json` 的 `hooks` 段添加：
+编辑 ~/.claude/settings.json，在 hooks 字段中加入：
 
 ```json
 "PermissionRequest": [
